@@ -1,9 +1,6 @@
 name: Daily Action with My Email
 
 on:
-  schedule:
-    # Runs at 12:00 UTC (noon) every day
-    - cron: "0 12 * * *"
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -13,8 +10,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 23f2000006@ds.study.iitm.ac.in - Display Email
-        run: echo "My email address is 23f2000006@ds.study.iitm.ac.in"
+      - name: Email Step - 23f2000006@ds.study.iitm.ac.in
+        run: echo "My email is 23f2000006@ds.study.iitm.ac.in"
 
-      - name: Another example step
-        run: echo "GitHub Actions is fun!"
+      - name: Another step
+        run: echo "GitHub Actions is running!"
