@@ -1,17 +1,17 @@
-name: Daily Action with My Email
+name: Test Email Step
 
 on:
   workflow_dispatch: # Allows manual triggering
 
 jobs:
-  daily-job:
+  test-job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Email Step - 23f2000006@ds.study.iitm.ac.in
+      - name: Email Verification - 23f2000006@ds.study.iitm.ac.in
         run: echo "My email is 23f2000006@ds.study.iitm.ac.in"
 
-      - name: Another step
-        run: echo "GitHub Actions is running!"
+      - name: Final Step
+        run: echo "Workflow completed successfully!"
